@@ -22,3 +22,25 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
 }
+
+/* Mobile nav: show menu links */
+@media (max-width: 768px) {
+  .navbar-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .navbar-shell nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .navbar-shell a,
+  .nav-link-main {
+    display: inline-block;
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+}
